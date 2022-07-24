@@ -387,7 +387,6 @@ body {
   overflow: hidden;
 }
 
-/* header */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -410,24 +409,6 @@ body {
           align-items: center;
 }
 
-/* Лого в навигации */
-.logo {
-  display: block;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #212121;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-
-.logo__text {
-  color: #2196f3;
-}
-
-/* Блок навигации*/
 .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +419,6 @@ body {
 .nav-menu__item {
   position: relative;
 }
-
 .nav-menu__item:not(:first-child) {
   margin-left: 50px;
 }
@@ -453,13 +433,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-
-.nav-menu__link:focus,
-.nav-menu__link:hover {
+.nav-menu__link:focus, .nav-menu__link:hover {
   color: #2196f3;
 }
 
-/* Блок контактов */
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,9 +458,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
 
@@ -493,16 +468,13 @@ body {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
   fill: #2196f3;
 }
 
 .nav-menu__link--active {
   color: #2196f3;
 }
-
 .nav-menu__link--active::after {
   content: "";
   position: absolute;
@@ -514,7 +486,22 @@ body {
   background-color: #2196f3;
 }
 
-/* Студия*/
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #212121;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo__text {
+  color: #2196f3;
+}
+
 /* Order */
 .order {
   max-width: 1600px;
