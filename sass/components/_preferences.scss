@@ -13,9 +13,7 @@
 }
 
 .preferences__overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex ();
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
