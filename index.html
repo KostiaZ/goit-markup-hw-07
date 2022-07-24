@@ -362,13 +362,13 @@
             <div class="footer-subscribe">
                 <h2 class="footer__title">Подпишитесь на рассылку</h2>
                 <ul>
-                    <li class="subscribe">
-                        <form class="subscribe-form">
-                            <label class="label" for="subscribe-e-mail"></label>
-                            <input class="input" type="email" name="subscribe-e-mail" id="subscribe-e-mail"
-                                placeholder="E-mail">
-                            <button class="sub-button" type="submit">Подписаться
-                                <svg class="icon" width="24px" height="24px">
+                    <li class="footer-subscribe__item">
+                        <form class="footer-subscribe__form">
+                            <label for="subscribe-e-mail"></label>
+                            <input class="footer-subscribe__input" type="email" name="subscribe-e-mail"
+                                id="subscribe-e-mail" placeholder="E-mail">
+                            <button class="footer-subscribe__button-submit" type="submit">Подписаться
+                                <svg class="footer-subscribe__icon" width="24px" height="24px">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
@@ -389,7 +389,7 @@
             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="order-form" autocomplete="on">
                 <div class="order-form__field">
-                    <label for="name" class=order-form__label>Имя</label>
+                    <label for="name" class="order-form__label">Имя</label>
                     <div class="order-form__position">
                         <input type="text" id="name" class="order-form__input">
                         <svg class="order-form__icon" width="18px" height="18px">
@@ -397,42 +397,44 @@
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="tel" class=form-label>Телефон</label>
-                    <div class="modal-position">
-                        <input type="tel" id="tel" class="form-input">
-                        <svg class="modal-icon" width="18px" height="18px">
+                <div class="order-form__field">
+                    <label for="tel" class="order-form__label">Телефон</label>
+                    <div class="order-form__position">
+                        <input type="tel" id="tel" class="order-form__input">
+                        <svg class="order-form__icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="email" class=form-label>Почта</label>
-                    <div class="modal-position">
-                        <input type="email" id="email" class="form-input">
-                        <svg class="modal-icon" width="18px" height="18px">
+                <div class="order-form__field">
+                    <label for="email" class="order-form__label">Почта</label>
+                    <div class="order-form__position">
+                        <input type="email" id="email" class="order-form__input">
+                        <svg class="order-form__icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-textarea">
-                    <label for="comment" class="form-label">Комментарий</label>
-                    <textarea class="textarea-input" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                <div class="order-form__textarea">
+                    <label for="comment" class="order-form__label">Комментарий</label>
+                    <textarea class="order-form__textarea-input" name="comment" id="comment"
+                        placeholder="Введите текст"></textarea>
                 </div>
                 <div class="policy">
-                    <label for="policy" class="policy-input">
-                        <div class="check-control">
-                            <input type="checkbox" id="policy" class="checkbox visually-hidden">
-                            <svg width="16" height="15" class="icon-policy" aria-hidden="true">
+                    <label for="policy" class="policy__input">
+                        <div class="policy__check">
+                            <input type="checkbox" id="policy" class="policy__checkbox visually-hidden">
+                            <svg width="16" height="15" class="policy__icon" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </div>
-                        <p class="terms">Соглашаюсь с рассылкой и принимаю <a class="terms-link" href="">Условия
+                        <p class="policy__terms">Соглашаюсь с рассылкой и принимаю <a class="policy__link"
+                                href="">Условия
                                 договора</a></p>
                     </label>
                     </input>
                 </div>
-                <button class="button-submit" type="submit">Отправить</button>
+                <button class="order-form__button-submit" type="submit">Отправить</button>
             </form>
         </div>
     </div>

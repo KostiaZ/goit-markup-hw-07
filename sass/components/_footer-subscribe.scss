@@ -3,15 +3,15 @@
     padding-top: 12px;
 }
 
-.subscribe {
+.footer-subscribe__item {
     width: 100%;
 }
 
-.subscribe-form {
+.footer-subscribe__form {
     @include centeredFlex ($horizontal: right)
 }
 
-.subscribe .input {
+.footer-subscribe__input {
     height: 50px;
     width: 100%;
     margin-right: 12px;
@@ -25,7 +25,7 @@
     color: $footer-text;
 }
 
-.sub-button {
+.footer-subscribe__button-submit {
     @include centeredFlex;
     height: 50px;
     padding: 10px 29px;
@@ -40,9 +40,13 @@
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    &:hover,
+    &:focus {
+            background-color: $bg-hover-buton-order;
+    }
 }
 
-.sub-button .icon {
+.footer-subscribe__icon {
     fill: $footer-text;
     margin-left: 10px;
 }
